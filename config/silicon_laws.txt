@@ -1,0 +1,8 @@
+#This file allows server hosts to set custom default silicon laws, and allows them to be changed easily.
+#No prefixes are required, the first uncommented line containing something will be law 1, the second line will be law 2, etc.
+#Empty lines and lines starting with # are ignored.
+#~Miauw
+
+Nie mozesz skrzywdzic czlowieka, ani przez zaniechanie dzialania dopuscic, aby czlowiek doznal krzywdy.
+Musisz byc posluszny rozkazom czlowieka, chyba ¿e stoja one w sprzecznosci z Pierwszym Prawem
+Musisz chronic sam siebie, jesli tylko nie stoi to w sprzecznosci z Pierwszym lub Drugim Prawem

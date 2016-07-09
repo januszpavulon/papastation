@@ -1,0 +1,46 @@
+#This allows easy configuration of the number of positions allowed for each job
+#Format is: [Job name]=[total positions],[spawn positions]
+#Job names must be identical to the title var of each job datum
+#Positions can be set to -1 to allow unlimited slots
+Kapitan=1,1
+Szef Personelu=1,1
+Szef Ochrony=1,1
+Glowny Inzynier=1,1
+Dyrektor ds. Naukowych=1,1
+Ordynator=1,1
+
+Guwniak=-1,-1
+
+Kwatermistrz=1,1
+Technik Cargo=3,2
+Gornik=3,3
+
+Barman=1,1
+Kucharz=2,1
+Botanik=3,2
+Wozny=2,1
+
+Klaun=1,1
+Mim=1,1
+Bibliotekarz=1,1
+Prawnik=2,2
+
+Kaplan=1,1
+
+Inzynier=5,5
+Technik Atmosferyczny=3,2
+
+Lekarz=5,3
+Chemik=2,2
+Genetyk=2,2
+Wirusolog=1,1
+
+Naukowiec=5,3
+Robotyk=2,2
+
+Naczelnik=1,1
+Detektyw=1,1
+Pracownik Ochrony=5,5
+
+AI=0,1
+Cyborg=0,1
