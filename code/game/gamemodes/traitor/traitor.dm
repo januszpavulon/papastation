@@ -10,7 +10,7 @@
 	config_tag = "traitor"
 	antag_flag = ROLE_TRAITOR
 	restricted_jobs = list("Cyborg")//They are part of the AI if he is traitor so are they, they use to get double chances
-	protected_jobs = list("Bagieta", "Naczelnik", "Szef Ochrony", "Kapitan")
+	protected_jobs = list("Bagieta", "Naczelnik", "Szef Ochrony", "Kapitan", "Szef Personelu")
 	required_players = 2
 	required_enemies = 1
 	recommended_enemies = 4
