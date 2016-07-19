@@ -1,8 +1,8 @@
 /datum/round_event_control/meteor_wave/meaty
 	name = "Meaty Ore Wave"
 	typepath = /datum/round_event/meteor_wave/meaty
-	weight = 1
-	max_occurrences = 1
+	weight = 10
+	max_occurrences = 3
 
 /datum/round_event/meteor_wave/meaty/announce()
 	priority_announce("Miesne meteoryty wykryte na kursie kolizyjnym ze stacja.", "ZARAZ JEBNIE",'sound/AI/meteors.ogg')
