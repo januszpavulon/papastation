@@ -40,7 +40,7 @@ Robotyk=2,2
 
 Naczelnik=1,1
 Detektyw=1,1
-Pracownik Ochrony=5,5
+Bagieta=5,5
 
 AI=0,1
 Cyborg=0,1
