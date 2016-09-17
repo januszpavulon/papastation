@@ -95,3 +95,10 @@
 	spawn_positions = 1
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology)
 	minimal_access = list(access_tox, access_tox_storage, access_research, access_xenobiology, access_robotics)
+
+/datum/job/cyborg/New()
+	..()
+	total_positions = 2
+	spawn_positions = 2
+/datum/job/cyborg/get_access()
+	return get_all_accesses()
