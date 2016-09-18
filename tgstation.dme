@@ -17,7 +17,6 @@
 #include "_maps\ministation.dm"
 #include "_maps\map_files\generic\z3.dmm"
 #include "_maps\map_files\generic\z4.dmm"
-#include "_maps\map_files\MiniStation\readme.dm"
 #include "code\_compile_options.dm"
 #include "code\hub.dm"
 #include "code\world.dm"
