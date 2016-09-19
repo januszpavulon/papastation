@@ -193,6 +193,16 @@
 				else
 					message = "<B>[src]</B> przytula \himself."
 
+		if ("jp","jp100")
+			var/jp = 'sound/misc/smrut.ogg'
+			if ((src.mind.assigned_role == "Bagieta") || (src.mind.assigned_role == "Kapitan") || (src.mind.assigned_role == "Szef Personelu") || (src.mind.assigned_role == "Detektyw"))
+				message = "<B>[src]</B> Szanuje policje."
+			else
+				playsound(loc, jp, 50, 1, -1)
+				message = "<B>[src]</B> Szkaluje policje."
+				m_type = 2
+
+
 		if ("me")
 			if(silent)
 				return
