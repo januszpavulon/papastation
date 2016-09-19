@@ -81,6 +81,13 @@
 			message = "<B>[src]</B> zesral sie i smierdzi."
 			m_type = 2
 
+		if ("skurwysyn","skurwysynie")
+			var/krzyk = 'sound/misc/skurwysynie.ogg'
+			playsound(loc, krzyk, 50, 1, -1)
+			message = "<B>[src]</B> Krzyczy!."
+			m_type = 2
+
+
 		if ("faint","faints")
 			message = "<B>[src]</B> mdleje."
 			if(sleeping)
@@ -131,6 +138,17 @@
 		if ("jump","jumps")
 			message = "<B>[src]</B> skacze!"
 			m_type = 1
+/*
+		if ("jp","jp100")
+			var/jp = 'sound/misc/jpjp.ogg'
+			var/mob/living/user
+			if ((user.mind && user.mind.assigned_role == "Bagieta") || (user.mind && user.mind.assigned_role == "Kapitan") || (user.mind && user.mind.assigned_role == "Szef Personelu") || (user.mind && user.mind.assigned_role == "Detektyw"))
+				message = "<B>[src]</B> Szanuje policje."
+			else if (user.mind && user.mind.assigned_role != "Kapitan")
+				playsound(loc, jp, 50, 1, -1)
+				message = "<B>[src]</B> Szkaluje policje."
+				m_type = 2
+*/
 
 		if ("laugh","laughs")
 			message = "<B>[src]</B> smieje sie."
