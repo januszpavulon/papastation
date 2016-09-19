@@ -354,7 +354,7 @@
 "gP" = (/obj/machinery/camera/autoname{dir = 4},/obj/structure/table,/obj/item/weapon/weldingtool,/turf/open/floor/plasteel,/area/assembly/chargebay)
 "gQ" = (/obj/machinery/atmospherics/components/unary/vent_pump{dir = 1; frequency = 1440; on = 1},/obj/structure/table,/obj/item/weapon/wrench,/obj/item/weapon/screwdriver,/obj/machinery/light,/turf/open/floor/plasteel,/area/assembly/chargebay)
 "gR" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/turf/open/floor/plasteel,/area/assembly/chargebay)
-"gS" = (/obj/machinery/button/door,/turf/closed/wall,/area/assembly/chargebay)
+"gS" = (/obj/machinery/button/door{id = "mechadoor"; pixel_x = -5; pixel_y = 7},/turf/closed/wall,/area/assembly/chargebay)
 "gT" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel,/area/hallway/primary/fore)
 "gU" = (/obj/structure/disposalpipe/trunk{dir = 4},/obj/structure/disposaloutlet,/turf/open/floor/engine,/area/medical/research{name = "Research Division"})
 "gV" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/engine,/area/medical/research{name = "Research Division"})
