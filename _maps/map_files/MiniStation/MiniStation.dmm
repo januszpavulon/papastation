@@ -866,7 +866,7 @@
 "qH" = (/obj/item/weapon/paper_bin{pixel_x = 1; pixel_y = 9},/obj/item/device/paicard,/obj/item/weapon/coin/silver,/obj/item/weapon/pen,/obj/machinery/light,/obj/item/weapon/storage/toolbox/mechanical,/obj/structure/table,/turf/open/floor/plasteel{icon_state = "neutral"},/area/hallway/primary/fore)
 "qI" = (/obj/machinery/bookbinder,/turf/open/floor/plasteel{icon_state = "neutral"},/area/hallway/primary/fore)
 "qJ" = (/obj/machinery/libraryscanner,/turf/open/floor/plasteel{icon_state = "neutral"},/area/hallway/primary/fore)
-"qK" = (/obj/machinery/computer/libraryconsole/bookmanagement,/turf/open/floor/plasteel{icon_state = "neutral"; dir = 6},/area/hallway/primary/fore)
+"qK" = (/obj/machinery/computer/libraryconsole/bookmanagement,/obj/structure/table,/turf/open/floor/plasteel{icon_state = "neutral"; dir = 6},/area/hallway/primary/fore)
 "qL" = (/obj/structure/sign/directions/science{dir = 4; pixel_y = 7},/obj/structure/sign/directions/security{dir = 1},/turf/closed/wall,/area/hallway/primary/central)
 "qM" = (/turf/closed/wall,/area/hallway/primary/central)
 "qN" = (/obj/machinery/door/firedoor/heavy,/obj/machinery/door/airlock/research{heat_proof = 1; name = "Toxins Lab"; req_access_txt = "7"},/turf/open/floor/plasteel{icon_state = "white"},/area/medical/research{name = "Research Division"})
