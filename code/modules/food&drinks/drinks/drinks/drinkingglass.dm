@@ -35,6 +35,10 @@
 				icon_state = "beerglass"
 				name = "glass of beer"
 				desc = "A freezing pint of beer."
+			if("bluecuracao")
+				icon_state = "curacaoglass"
+				name = "glass of bluecuracao"
+				desc = "Exotically blue, fruity drink, distilled from oranges."
 			if("greenbeer")
 				icon_state = "greenbeerglass"
 				name = "glass of green beer"
