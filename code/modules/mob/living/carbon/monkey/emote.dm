@@ -73,7 +73,7 @@
 				var/offset = prob(50) ? -2 : 2
 				animate(src, pixel_x = pixel_y + offset, time = 0.2, loop = 105)
 				playsound(loc, maupa, 50, 1, -1)
-				message = "<B>[src]</B> ZAPIERDALA CI WPIERDolIC"
+				message = "<B>[src]</B> LECI CI WPIERDOLIC"
 				m_type = 2
 
 
