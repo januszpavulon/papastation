@@ -1,5 +1,12 @@
 ////////////////////////////////////////// COCKTAILS //////////////////////////////////////
 
+/datum/chemical_reaction/bluecuracao
+	name = "Blue Curacao"
+	id = "bluecuracao"
+	result = "bluecuracao"
+	required_reagents = list("orangejuice" = 10)
+	required_catalysts = list("enzyme" = 1)
+	result_amount = 10
 
 /datum/chemical_reaction/goldschlager
 	name = "Goldschlager"

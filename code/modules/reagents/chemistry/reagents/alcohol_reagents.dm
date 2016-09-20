@@ -68,6 +68,13 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	boozepwr = 25
 
+/datum/reagent/consumable/ethanol/bluecuracao
+	name = "Blue Curacao"
+	id = "bluecuracao"
+	description = "Exotically blue, fruity drink, distilled from oranges."
+	color = "#0000CD"
+	boozepwr = 25
+
 /datum/reagent/consumable/ethanol/beer/green
 	name = "Green Beer"
 	id = "greenbeer"
