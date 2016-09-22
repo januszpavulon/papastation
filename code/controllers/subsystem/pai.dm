@@ -43,24 +43,24 @@ var/datum/subsystem/pai/SSpai
 
 		switch(option)
 			if("name")
-				t = input("Twoja nazwa jako pAI", "Nazwa pAI", candidate.name) as text
+				t = input("Enter a name for your pAI", "pAI Name", candidate.name) as text
 				if(t)
 					candidate.name = copytext(sanitize(t),1,MAX_NAME_LEN)
 			if("desc")
-				t = input("Opis twojego pAI", "Opis pAI", candidate.description) as message
+				t = input("Enter a description for your pAI", "pAI Description", candidate.description) as message
 				if(t)
 					candidate.description = copytext(sanitize(t),1,MAX_MESSAGE_LEN)
 			if("role")
-				t = input("Rola twojego pAI", "Preferowana posada wlasciciela", candidate.role) as text
+				t = input("Enter a role for your pAI", "pAI Role", candidate.role) as text
 				if(t)
 					candidate.role = copytext(sanitize(t),1,MAX_MESSAGE_LEN)
 			if("ooc")
-				t = input("Wpisz komentarze OOC", "Komentarze OOC", candidate.comments) as message
+				t = input("Enter any OOC comments", "pAI OOC Comments", candidate.comments) as message
 				if(t)
 					candidate.comments = copytext(sanitize(t),1,MAX_MESSAGE_LEN)
-			if("zapisz")
+			if("save")
 				candidate.savefile_save(usr)
-			if("wczytaj")
+			if("load")
 				candidate.savefile_load(usr)
 				//In case people have saved unsanitized stuff.
 				if(candidate.name)
@@ -72,7 +72,7 @@ var/datum/subsystem/pai/SSpai
 				if(candidate.comments)
 					candidate.comments = copytext(sanitize(candidate.comments),1,MAX_MESSAGE_LEN)
 
-			if("wyslij")
+			if("submit")
 				if(candidate)
 					candidate.ready = 1
 					for(var/obj/item/device/paicard/p in world)
@@ -96,11 +96,9 @@ var/datum/subsystem/pai/SSpai
 	var/dat = ""
 	dat += {"
 			<style type="text/css">
-
 			p.top {
 				background-color: #AAAAAA; color: black;
 			}
-
 			tr.d0 td {
 				background-color: #CC9999; color: black;
 			}
@@ -110,26 +108,26 @@ var/datum/subsystem/pai/SSpai
 			</style>
 			"}
 
-	dat += "<p class=\"top\">Skonfiguruj swoja tozsamosc jako pAI</p>"
+	dat += "<p class=\"top\">Please configure your pAI personality's options. Remember, what you enter here could determine whether or not the user requesting a personality chooses you!</p>"
 	dat += "<table>"
 	dat += "<tr class=\"d0\"><td>Name:</td><td>[candidate.name]</td></tr>"
-	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=name;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Wybierz imie ktore bedzie pasowac do oprogramowania pAI.</td></tr>"
+	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=name;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>What you plan to call yourself. Suggestions: Any character name you would choose for a station character OR an AI.</td></tr>"
 
 	dat += "<tr class=\"d0\"><td>Description:</td><td>[candidate.description]</td></tr>"
-	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=desc;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Pierdol to.</td></tr>"
+	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=desc;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>What sort of pAI you typically play; your mannerisms, your quirks, etc. This can be as sparse or as detailed as you like.</td></tr>"
 
 	dat += "<tr class=\"d0\"><td>Preferred Role:</td><td>[candidate.role]</td></tr>"
-	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=role;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Pierdol to.</td></tr>"
+	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=role;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Do you like to partner with sneaky social ninjas? Like to help security hunt down thugs? Enjoy watching an engineer's back while he saves the station yet again? This doesn't have to be limited to just station jobs. Pretty much any general descriptor for what you'd like to be doing works here.</td></tr>"
 
 	dat += "<tr class=\"d0\"><td>OOC Comments:</td><td>[candidate.comments]</td></tr>"
-	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=ooc;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Pierdol to.</td></tr>"
+	dat += "<tr class=\"d1\"><td><a href='byond://?src=\ref[src];option=ooc;new=1;candidate=\ref[candidate]'>\[Edit\]</a></td><td>Anything you'd like to address specifically to the player reading this in an OOC manner. \"I prefer more serious RP.\", \"I'm still learning the interface!\", etc. Feel free to leave this blank if you want.</td></tr>"
 
 	dat += "</table>"
 
 	dat += "<br>"
-	dat += "<h3><a href='byond://?src=\ref[src];option=submit;new=1;candidate=\ref[candidate]'>Wyslij Tozsamosc</a></h3><br>"
-	dat += "<a href='byond://?src=\ref[src];option=save;new=1;candidate=\ref[candidate]'>Zapisz Tozsamosc</a><br>"
-	dat += "<a href='byond://?src=\ref[src];option=load;new=1;candidate=\ref[candidate]'>Wczytaj Tozsamosc</a><br>"
+	dat += "<h3><a href='byond://?src=\ref[src];option=submit;new=1;candidate=\ref[candidate]'>Submit Personality</a></h3><br>"
+	dat += "<a href='byond://?src=\ref[src];option=save;new=1;candidate=\ref[candidate]'>Save Personality</a><br>"
+	dat += "<a href='byond://?src=\ref[src];option=load;new=1;candidate=\ref[candidate]'>Load Personality</a><br>"
 
 	M << browse(dat, "window=paiRecruit")
 
@@ -148,11 +146,9 @@ var/datum/subsystem/pai/SSpai
 
 	dat += {"
 			<style type="text/css">
-
 			p.top {
 				background-color: #AAAAAA; color: black;
 			}
-
 			tr.d0 td {
 				background-color: #CC9999; color: black;
 			}
@@ -164,15 +160,15 @@ var/datum/subsystem/pai/SSpai
 			}
 			</style>
 			"}
-	dat += "<p class=\"top\">Wyslano prosbe o wyslanie oprogramowania pAI do glownej bazy danych. Jesli w najblizszym czasie nie pojawi sie zaden kandydat, prosimy sprobowac pozniej</p>"
+	dat += "<p class=\"top\">Requesting AI personalities from central database... If there are no entries, or if a suitable entry is not listed, check again later as more personalities may be added.</p>"
 
 	dat += "<table>"
 
 	for(var/datum/paiCandidate/c in available)
-		dat += "<tr class=\"d0\"><td>Imie:</td><td>[c.name]</td></tr>"
-		dat += "<tr class=\"d1\"><td>Opis:</td><td>[c.description]</td></tr>"
-		dat += "<tr class=\"d0\"><td>Preferowana Rola:</td><td>[c.role]</td></tr>"
-		dat += "<tr class=\"d1\"><td>Komentarze OOC:</td><td>[c.comments]</td></tr>"
+		dat += "<tr class=\"d0\"><td>Name:</td><td>[c.name]</td></tr>"
+		dat += "<tr class=\"d1\"><td>Description:</td><td>[c.description]</td></tr>"
+		dat += "<tr class=\"d0\"><td>Preferred Role:</td><td>[c.role]</td></tr>"
+		dat += "<tr class=\"d1\"><td>OOC Comments:</td><td>[c.comments]</td></tr>"
 		dat += "<tr class=\"d2\"><td><a href='byond://?src=\ref[src];download=1;candidate=\ref[c];device=\ref[p]'>\[Download [c.name]\]</a></td><td></td></tr>"
 
 	dat += "</table>"
@@ -201,12 +197,12 @@ var/datum/subsystem/pai/SSpai
 	if(!C)
 		return
 	asked[C.ckey] = world.time
-	var/response = tgalert(C, "Ktos wlaczyl urzadzenie pAI i probuje uzyskac dla niej oprogramowanie. Czy chcesz grac jako personalne AI?", "pAI", "Tak", "Nie", "Nigdy w tej rundzie", StealFocus=0, Timeout=askDelay)
+	var/response = tgalert(C, "Someone is requesting a pAI personality. Would you like to play as a personal AI?", "pAI Request", "Yes", "No", "Never for this round", StealFocus=0, Timeout=askDelay)
 	if(!C)
 		return		//handle logouts that happen whilst the alert is waiting for a response.
-	if(response == "Tak")
+	if(response == "Yes")
 		recruitWindow(C.mob)
-	else if (response == "Nigdy w tej rundzie")
+	else if (response == "Never for this round")
 		asked[C.ckey] = NEVER_FOR_THIS_ROUND
 
 /datum/paiCandidate
@@ -215,4 +211,4 @@ var/datum/subsystem/pai/SSpai
 	var/description
 	var/role
 	var/comments
-	var/ready = 0
+var/ready = 0
