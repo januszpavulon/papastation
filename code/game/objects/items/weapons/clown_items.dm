@@ -133,3 +133,68 @@
 	icon_state = "air_horn"
 	honksound = 'sound/items/AirHorn2.ogg'
 	cooldowntime = 50
+
+/obj/item/vuvuzela
+	name = "vuvuzela"
+	desc = "A loud horn made popular at soccer games-BZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+	icon = 'icons/obj/instruments.dmi'
+	icon_state = "vuvuzela"
+	throwforce = 3
+	var/spam_flag = 0
+	var/sound_vuvuzela = 'sound/items/vuvuzela.ogg'
+	var/cooldowntime = 70
+
+/obj/item/vuvuzela/attack_self(mob/user as mob)
+	if (spam_flag == 0)
+		spam_flag = 1
+		user.visible_message("<b><span style=\"color:red\">BZZZZZZZZZZZZZZZZZZZ!.</span></b>")
+		playsound(get_turf(src), pick(src.sound_vuvuzela), 100, 1)
+		src.add_fingerprint(user)
+		spawn(cooldowntime)
+			spam_flag = 0
+	return
+
+
+/obj/item/saxophone
+	name = "saxophone"
+	desc = "NEVER GONNA DANCE AGAIN, GUILTY FEET HAVE GOT NO RHYTHM"
+	icon = 'icons/obj/instruments.dmi'
+	icon_state = "sax" // temp
+	item_state = "sax"
+	force = 1
+	throwforce = 5
+	var/spam_flag = 0
+	var/list/sounds_sax = list('sound/items/sax.ogg', 'sound/items/sax2.ogg','sound/items/sax3.ogg','sound/items/sax4.ogg','sound/items/sax5.ogg')
+	var/cooldowntime = 100
+
+/obj/item/saxophone/attack_self(mob/user as mob)
+	if (spam_flag == 0)
+		spam_flag = 1
+		user.visible_message("<B>[user]</B> lays down a [pick("sexy", "sensuous", "libidinous","spicy","flirtatious","salacious","sizzling","carnal","hedonistic")] riff on \his saxophone!")
+		playsound(get_turf(src), pick(src.sounds_sax), 100, 1)
+		src.add_fingerprint(user)
+		spawn(cooldowntime)
+			spam_flag = 0
+	return
+
+/obj/item/bagpipe
+	name = "bagpipe"
+	desc = "Almost as much of a windbag as the Captain."
+	icon = 'icons/obj/instruments.dmi'
+	icon_state = "bagpipe" // temp
+	item_state = "bagpipe"
+	force = 1
+	throwforce = 5
+	var/spam_flag = 0
+	var/list/sounds_bagpipe = list('sound/items/bagpipe.ogg', 'sound/items/bagpipe2.ogg','sound/items/bagpipe3.ogg')
+	var/cooldowntime = 100
+
+/obj/item/bagpipe/attack_self(mob/user as mob)
+	if (spam_flag == 0)
+		spam_flag = 1
+		user.visible_message("<B>[user]</B> plays a [pick("patriotic", "rowdy", "wee","grand","free","Glaswegian","sizzling","carnal","hedonistic")] tune on \his bagpipe!")
+		playsound(get_turf(src), pick(src.sounds_bagpipe), 50, 1)
+		src.add_fingerprint(user)
+		spawn(cooldowntime)
+			spam_flag = 0
+	return
