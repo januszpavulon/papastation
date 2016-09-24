@@ -133,7 +133,7 @@
 "cC" = (/obj/machinery/door/airlock/maintenance{name = "Mass Driver"; req_access_txt = "0"; req_one_access_txt = "12;22"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating,/area/chapel/main)
 "cD" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/closed/wall,/area/chapel/main)
 "cE" = (/obj/effect/landmark/start{name = "Klaun"},/turf/open/floor/wood,/area/crew_quarters/theatre)
-"cF" = (/obj/structure/chair{dir = 1},/turf/open/floor/wood,/area/crew_quarters/theatre)
+"cF" = (/obj/structure/chair{dir = 1},/obj/effect/landmark/start{name = "Mim"},/turf/open/floor/wood,/area/crew_quarters/theatre)
 "cG" = (/obj/machinery/camera{c_tag = "Toxin Test Site"; dir = 8; network = list("RD","Toxins"); use_power = 0},/turf/open/floor/wood,/area/crew_quarters/theatre)
 "cH" = (/obj/machinery/power/apc{auto_name = 1; dir = 2; name = "_South APC"; pixel_y = -24},/obj/structure/cable,/turf/open/floor/plating{dir = 2; icon_state = "warnplate"},/area/chapel/main)
 "cI" = (/turf/open/floor/plating,/area/construction/qmaint)
