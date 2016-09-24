@@ -2,9 +2,9 @@
 	name = "Spawn Swarmer Shell"
 	typepath = /datum/round_event/spawn_swarmer
 	weight = 7
-	max_occurrences = 1 //Only once okay fam
-	earliest_start = 18000 //30 minutes
-	min_players = 15
+	max_occurrences = 3 //Only once okay fam
+	earliest_start = 1200
+	min_players = 10
 
 
 /datum/round_event/spawn_swarmer
