@@ -4,7 +4,7 @@
 	weight = 1 //Very rare
 	max_occurrences = 1
 	earliest_start = 36000 //1 hour
-	min_players = 20
+	min_players = 15
 
 
 
