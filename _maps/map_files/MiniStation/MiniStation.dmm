@@ -2164,7 +2164,7 @@
 "PF" = (/obj/machinery/message_server,/turf/open/floor/bluegrid{icon_state = "dark"; name = "Mainframe Floor"; initial_gas_mix = "n2=100;TEMP=80"},/area/tcommsat/computer)
 "PG" = (/obj/machinery/blackbox_recorder,/turf/open/floor/bluegrid{icon_state = "dark"; name = "Mainframe Floor"; initial_gas_mix = "n2=100;TEMP=80"},/area/tcommsat/computer)
 "PH" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/turf/closed/wall,/area/tcommsat/computer)
-"PI" = (/obj/machinery/computer/telecomms/monitor,/turf/open/floor/plasteel{dir = 8; icon_state = "yellow"},/area/tcommsat/computer)
+"PI" = (/obj/machinery/computer/telecomms/monitor,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel{dir = 8; icon_state = "yellow"},/area/tcommsat/computer)
 "PJ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/tcommsat/computer)
 "PK" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/turf/open/floor/plasteel,/area/tcommsat/computer)
 "PL" = (/obj/machinery/light_switch{pixel_x = 27},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/open/floor/plasteel,/area/tcommsat/computer)
