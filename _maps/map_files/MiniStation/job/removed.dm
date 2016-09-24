@@ -12,9 +12,6 @@
 /datum/job/mining/config_check()
 	return 0
 
-/datum/job/mime/config_check()
-	return 0
-
 /datum/job/librarian/config_check()
 	return 0
 
