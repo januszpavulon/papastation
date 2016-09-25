@@ -299,3 +299,35 @@
 		slot_equipment_priority.Insert(index, slot_head)
 		return
 	return ..()
+
+/obj/item/weapon/reagent_containers/glass/wateringcan
+	name = "wateringcan"
+	desc = "It's a wateringcan."
+	icon = 'icons/obj/janitor.dmi'
+	icon_state = "wateringcan"
+	materials = list(MAT_METAL=200)
+	w_class = 3
+	amount_per_transfer_from_this = 20
+	possible_transfer_amounts = list(10,15,20,25,30,50,100)
+	volume = 250
+	flags = OPENCONTAINER
+	flags_inv = HIDEHAIR
+
+
+
+/obj/item/weapon/reagent_containers/glass/wateringcan/attackby(obj/O, mob/user, params)
+	if(istype(O, /obj/item/weapon/mop))
+		if(reagents.total_volume < 1)
+			user << "<span class='warning'>[src] is out of water!</span>"
+		else
+			reagents.trans_to(O, 5)
+			user << "<span class='notice'>You wet [O] in [src].</span>"
+			playsound(loc, 'sound/effects/slosh.ogg', 25, 1)
+	else if(isprox(O))
+		user << "<span class='notice'>You add [O] to [src].</span>"
+		qdel(O)
+		user.unEquip(src)
+		qdel(src)
+		user.put_in_hands(new /obj/item/weapon/bucket_sensor)
+	else
+		..()
