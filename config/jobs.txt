@@ -18,7 +18,7 @@ Gornik=3,3
 Barman=1,1
 Kucharz=2,1
 Botanik=3,2
-Wozny=2,1
+Wozny=1,1
 
 Klaun=1,1
 Mim=1,1
