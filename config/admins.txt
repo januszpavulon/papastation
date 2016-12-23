@@ -9,4 +9,3 @@
 ###############################################################################################
 Sindrimyr = Game Master
 januszpavulon = Game Master
-Lyrq = Game Master
