@@ -26,7 +26,7 @@
 	SSshuttle.shuttle_loan = src
 	switch(dispatch_type)
 		if(HIJACK_SYNDIE)
-			priority_announce("Cargo: Syndykat proboje zinfiltrowac wasza stacje. Jesli pozwolicie im porwac wasz statek cargo to zaoszczedzicie nam klopotow.","Wydzial Kontrwywiadu")
+			priority_announce("Cargo: Syndykat probuje zinfiltrowac wasza stacje. Jesli pozwolicie im porwac wasz statek cargo to zaoszczedzicie nam klopotow.","Wydzial Kontrwywiadu")
 		if(RUSKY_PARTY)
 			priority_announce("Cargo: Grupa wkurwionych Rosjan chce sie pobawic, mozecie im wyslac swoj statek cargo a potem sie nimi zajac?","Wydzial Przyjazni z Rosjanami")
 		if(SPIDER_GIFT)
