@@ -88,9 +88,9 @@
 			var/timeleft = round((silence_time - world.timeofday)/10 ,1)
 			stat(null, "Communications system reboot in -[(timeleft / 60) % 60]:[add_zero(num2text(timeleft % 60), 2)]")
 		if(!src.stat)
-			stat(null, text("Integralnosc Systemu: [(src.health+100)/2]%"))
+			stat(null, text("System integrity: [(src.health+100)/2]%"))
 		else
-			stat(null, text("Systemy niefunkcjonalne"))
+			stat(null, text("Systems nonfunctional"))
 
 /mob/living/silicon/pai/blob_act()
 	return 0
@@ -106,11 +106,11 @@
 		// 33% chance of no additional effect
 
 	if(prob(20))
-		visible_message("<span class='warning'>Z komponentow [src] leci duza liczba iskier!</span>", 3, "<span class='italics'>Slyszysz syczenie i czujesz smrod spalenizny, widzisz duza ilosc iskier!</span>", 2)
+		visible_message("<span class='warning'>A shower of sparks spray from [src]'s inner workings.</span>", 3, "<span class='italics'>You hear and smell the ozone hiss of electrical sparks being expelled violently.</span>", 2)
 		return src.death(0)
 
 	silence_time = world.timeofday + 120 * 10		// Silence for 2 minutes
-	src << "<span class ='warning'>Spiecie w obwodach komunikacyjnych. Zainicjalizowano probe naprawy, przez ten czas synteza mowy i komunikacja tekstowa bedzie niedostepna.</span>"
+	src << "<span class ='warning'>Communication circuit overload. Shutting down and reloading communication circuits - speech and messaging functionality will be unavailable until the reboot is complete.</span>"
 
 	switch(pick(1,2,3))
 		if(1)

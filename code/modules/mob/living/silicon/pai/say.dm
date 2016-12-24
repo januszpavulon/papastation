@@ -1,6 +1,6 @@
 /mob/living/silicon/pai/say(msg)
 	if(silence_time)
-		src << "<span class='warning'>Obwody komunikacyjne nadal nie dzialaja.</span>"
+		src << "<span class='warning'>Communication circuits remain unitialized.</span>"
 	else
 		..(msg)
 
