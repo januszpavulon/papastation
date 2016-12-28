@@ -16,7 +16,7 @@ Technik Cargo=3,2
 Gornik=3,3
 
 Barman=1,1
-Kucharz=2,1
+Kucharz=1,1
 Botanik=3,2
 Wozny=1,1
 
