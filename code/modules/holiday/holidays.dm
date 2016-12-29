@@ -54,7 +54,7 @@
 // The actual holidays
 
 /datum/holiday/new_year
-    return "SUPER SYLWESTER KURWO"
+	return "SUPER SYLWESTER KURWO"
 	name = NEW_YEAR
 	begin_day = 30
 	begin_month = DECEMBER
