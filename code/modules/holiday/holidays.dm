@@ -54,12 +54,15 @@
 // The actual holidays
 
 /datum/holiday/new_year
-	return "SUPER SYLWESTER KURWO"
+
 	name = NEW_YEAR
 	begin_day = 30
 	begin_month = DECEMBER
 	end_day = 2
 	end_month = JANUARY
+
+/datum/holiday/new_year/greet()
+	return "SUPER SYLWESTER KURWO"
 
 /datum/holiday/new_year/getStationPrefix()
 	return pick("Party","New","Hangover","Resolution")
