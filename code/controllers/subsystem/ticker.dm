@@ -53,7 +53,8 @@ var/datum/subsystem/ticker/ticker
 	NEW_SS_GLOBAL(ticker)
 
 	login_music = pickweight(list('sound/ambience/title2.ogg' = 31, 'sound/ambience/title1.ogg' = 31, 'sound/ambience/title3.ogg' =31, 'sound/ambience/terka.ogg' = 31)) // choose title music!
-
+	if(SSevent.holidays && SSevent.holidays[NEW_YEAR])
+		login_music = pickweight(list('sound/ambience/inba1.ogg' = 31, 'sound/ambience/inba2.ogg' = 31, 'sound/ambience/inba3.ogg' =31, 'sound/ambience/inba4.ogg' = 31))
 
 /datum/subsystem/ticker/Initialize(timeofday, zlevel)
 	if (zlevel)
