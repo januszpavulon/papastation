@@ -237,7 +237,7 @@
 "eC" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/hallway/primary/fore)
 "eD" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/turf/open/floor/carpet,/area/chapel/main)
 "eE" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/carpet,/area/chapel/main)
-"eF" = (/obj/structure/table/wood,/obj/item/voodoo,/obj/machinery/atmospherics/pipe/simple/scrubbers,/turf/open/floor/carpet,/area/chapel/office)
+"eF" = (/obj/structure/table/wood,/obj/machinery/atmospherics/pipe/simple/scrubbers,/turf/open/floor/carpet,/area/chapel/office)
 "eG" = (/obj/structure/table/wood,/obj/item/weapon/reagent_containers/food/snacks/pie/cream,/obj/item/weapon/reagent_containers/food/snacks/pie/cream,/obj/item/weapon/reagent_containers/food/snacks/pie/cream,/turf/open/floor/wood,/area/chapel/office)
 "eH" = (/obj/machinery/airalarm{dir = 4; pixel_x = -23; pixel_y = 0},/obj/machinery/keycard_auth{pixel_y = -24},/turf/open/floor/plasteel,/area/bridge)
 "eI" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/machinery/hologram/holopad,/turf/open/floor/plasteel,/area/bridge)
