@@ -52,7 +52,7 @@ var/datum/subsystem/ticker/ticker
 /datum/subsystem/ticker/New()
 	NEW_SS_GLOBAL(ticker)
 
-	login_music = pickweight(list('sound/ambience/title1.ogg' = 31, 'sound/ambience/title2.ogg' = 31, 'sound/ambience/title3.ogg' =31, 'sound/ambience/title4.ogg' = 31)) // choose title music!
+	login_music = pickweight(list('sound/ambience/title1.ogg' = 31, 'sound/ambience/title2.ogg' = 31, 'sound/ambience/title3.ogg' =31)) // choose title music!
 
 /datum/subsystem/ticker/Initialize(timeofday, zlevel)
 	if (zlevel)
