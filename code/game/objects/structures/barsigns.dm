@@ -139,144 +139,31 @@
 
 
 
-/datum/barsign/maltesefalcon
-	name = "Maltese Falcon"
-	icon = "maltesefalcon"
-	desc = "The Maltese Falcon, Space Bar and Grill."
+/datum/barsign/cdork
+	name = "Curacao'dOrk"
+	icon = "cdork"
+	desc = "Bar Kurakao"
 
+/datum/barsign/karagen
+	name = "Karachan Bar"
+	icon = "karagen"
+	desc = "Bar dla prawdziwych prawiczkow"
 
-/datum/barsign/thebark
-	name = "The Bark"
-	icon = "thebark"
-	desc = "Ian's bar of choice."
+/datum/barsign/cccp
+	name = "CP Bar"
+	icon = "karagen"
+	desc = "Dzieci przyszloscia narodu"
 
+/datum/barsign/xkom
+	name = "Karachan Bar"
+	icon = "xkom"
+	desc = "99% szans na trafienie"
 
-/datum/barsign/harmbaton
-	name = "The Harmbaton"
-	icon = "theharmbaton"
-	desc = "A great dining experience for both security members and assistants."
+/datum/barsign/chan
+	name = "Karachan Bar"
+	icon = "xkom"
+	desc = "Kara:Chan"
 
-
-/datum/barsign/thesingulo
-	name = "The Singulo"
-	icon = "thesingulo"
-	desc = "Where people go that'd rather not be called by their name."
-
-
-/datum/barsign/thedrunkcarp
-	name = "The Drunk Carp"
-	icon = "thedrunkcarp"
-	desc = "Don't drink and swim."
-
-
-/datum/barsign/scotchservinwill
-	name = "Scotch Servin Willy's"
-	icon = "scotchservinwill"
-	desc = "Willy sure moved up in the world from clown to bartender."
-
-
-/datum/barsign/officerbeersky
-	name = "Officer Beersky's"
-	icon = "officerbeersky"
-	desc = "Man eat a dong, these drinks are great."
-
-
-/datum/barsign/thecavern
-	name = "The Cavern"
-	icon = "thecavern"
-	desc = "Fine drinks while listening to some fine tunes."
-
-
-/datum/barsign/theouterspess
-	name = "The Outer Spess"
-	icon = "theouterspess"
-	desc = "This bar isn't actually located in outer space."
-
-
-/datum/barsign/slipperyshots
-	name = "Slippery Shots"
-	icon = "slipperyshots"
-	desc = "Slippery slope to drunkeness with our shots!"
-
-
-/datum/barsign/thegreytide
-	name = "The Grey Tide"
-	icon = "thegreytide"
-	desc = "Abandon your toolboxing ways and enjoy a lazy beer!"
-
-
-/datum/barsign/honkednloaded
-	name = "Honked 'n' Loaded"
-	icon = "honkednloaded"
-	desc = "Honk."
-
-
-/datum/barsign/thenest
-	name = "The Nest"
-	icon = "thenest"
-	desc = "A good place to retire for a drink after a long night of crime fighting."
-
-
-/datum/barsign/thecoderbus
-	name = "The Coderbus"
-	icon = "thecoderbus"
-	desc = "A very controversial bar known for its wide variety of constantly-changing drinks."
-
-
-/datum/barsign/theadminbus
-	name = "The Adminbus"
-	icon = "theadminbus"
-	desc = "An establishment visited mainly by space-judges. It isn't bombed nearly as much as court hearings."
-
-/datum/barsign/oldcockinn
-	name = "The Old Cock Inn"
-	icon = "oldcockinn"
-	desc = "Something about this sign fills you with despair."
-
-/datum/barsign/thewretchedhive
-	name = "The Wretched Hive"
-	icon = "thewretchedhive"
-	desc = "Legally obligated to instruct you to check your drinks for acid before consumption."
-
-/datum/barsign/robustacafe
-	name = "The Robusta Cafe"
-	icon = "robustacafe"
-	desc = "Holder of the 'Most Lethal Barfights' record 5 years uncontested."
-
-/datum/barsign/emergencyrumparty
-	name = "The Emergency Rum Party"
-	icon = "emergencyrumparty"
-	desc = "Recently relicensed after a long closure."
-
-/datum/barsign/combocafe
-	name = "The Combo Cafe"
-	icon = "combocafe"
-	desc = "Renowned system-wide for their utterly uncreative drink combinations."
-
-/datum/barsign/vladssaladbar
-	name = "Vlad's Salad Bar"
-	icon = "vladssaladbar"
-	desc = "Under new management. Vlad was always a bit too trigger happy with that shotgun."
-
-/datum/barsign/theshaken
-	name = "The Shaken"
-	icon = "theshaken"
-	desc = "This establishment does not serve stirred drinks."
-
-/datum/barsign/thealenath
-	name = "The Ale' Nath"
-	icon = "thealenath"
-	desc = "All right, buddy. I think you've had EI NATH. Time to get a cab."
-
-/datum/barsign/thealohasnackbar
-	name = "The Aloha Snackbar"
-	icon = "alohasnackbar"
-	desc = "A tasteful, inoffensive tiki bar sign."
-
-/datum/barsign/thenet
-	name = "The Net"
-	icon = "thenet"
-	desc = "You just seem to get caught up in it for hours."
 
 
 /datum/barsign/hiddensigns
