@@ -816,7 +816,6 @@
 #include "code\modules\admin\verbs\deadsay.dm"
 #include "code\modules\admin\verbs\debug.dm"
 #include "code\modules\admin\verbs\diagnostics.dm"
-#include "code\modules\admin\verbs\fps.dm"
 #include "code\modules\admin\verbs\getlogs.dm"
 #include "code\modules\admin\verbs\machine_upgrade.dm"
 #include "code\modules\admin\verbs\manipulate_organs.dm"

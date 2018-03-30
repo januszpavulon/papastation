@@ -104,7 +104,7 @@
 "bZ" = (/obj/structure/barricade/wooden,/obj/effect/decal/cleanable/greenglow,/turf/open/floor/wood{icon_state = "wood-broken"},/area/crew_quarters/cafeteria)
 "ca" = (/turf/open/floor/wood{icon_state = "wood-broken6"},/area/crew_quarters/cafeteria)
 "cb" = (/turf/closed/wall,/area/construction/qmaint)
-"cc" = (/obj/structure/barricade/wooden,/turf/open/floor/plating,/area/construction/qmaint)
+"cc" = (/obj/structure/barricade/wooden,/obj/machinery/door/airlock/maintenance{req_access_txt = "0"; req_one_access_txt = "12;22;46"},/turf/open/floor/plating,/area/construction/qmaint)
 "cd" = (/turf/closed/wall,/area/chapel/main)
 "ce" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plating,/area/construction/qmaint)
 "cf" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/turf/open/floor/plating,/area/construction/qmaint)
