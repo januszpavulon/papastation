@@ -112,7 +112,7 @@
 
 	if(href_list["observe"])
 
-		if(alert(src,"Jestes pewny ze chcesz obserwowac? Nie bedziesz mogl wziasc udzialu w tej rundzie!","Obserwacja","Tak","Nie") == "Tak")
+		if(alert(src,"Jestes pewny ze chcesz obserwowac? Nie bedziesz mogl wziac udzialu w tej rundzie!","Obserwacja","Tak","Nie") == "Tak")
 			if(!client)
 				return 1
 			var/mob/dead/observer/observer = new()

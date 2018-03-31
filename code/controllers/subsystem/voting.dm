@@ -174,7 +174,7 @@ var/datum/subsystem/vote/SSvote
 		if(mode == "custom")
 			text += "\n[question]"
 		log_vote(text)
-		world << "\n<font color='purple'><b>[text]</b>\nWpisz <b>vote</b> albo kliknij <a href='?src=\ref[src]'>tutaj</a> by wziasc w nim udzial.\nMasz [config.vote_period/10] sekund by to zrobic.</font>"
+		world << "\n<font color='purple'><b>[text]</b>\nWpisz <b>vote</b> albo kliknij <a href='?src=\ref[src]'>tutaj</a> by wziac w nim udzial.\nMasz [config.vote_period/10] sekund by to zrobic.</font>"
 		time_remaining = round(config.vote_period/10)
 		return 1
 	return 0
