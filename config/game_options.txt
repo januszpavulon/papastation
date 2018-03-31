@@ -59,7 +59,7 @@ ANIMAL_DELAY 0
 #HUMANS_NEED_SURNAMES
 
 ## If uncommented, this forces all players to use random names !and appearances!.
-#FORCE_RANDOM_NAMES
+FORCE_RANDOM_NAMES
 
 
 ### ALERT LEVELS ###
