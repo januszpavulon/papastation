@@ -151,7 +151,7 @@
 
 /datum/barsign/cccp
 	name = "CP Bar"
-	icon = "karagen"
+	icon = "cccp"
 	desc = "Dzieci przyszloscia narodu"
 
 /datum/barsign/xkom
@@ -161,7 +161,7 @@
 
 /datum/barsign/chan
 	name = "Karachan Bar"
-	icon = "xkom"
+	icon = "chan"
 	desc = "Kara:Chan"
 
 
